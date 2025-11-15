@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore 10 unique artisan and craftsmanship landing pages">
+    <title>Artisan & Craftsmanship Landing Pages</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 3rem 0;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-weight: 900;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: #7f8c8d;
+            margin-bottom: 0.5rem;
+        }
+        .description {
+            font-size: 1rem;
+            color: #95a5a6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+        .card-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .card h2 {
+            font-size: 1.75rem;
+            margin-bottom: 0.75rem;
+            color: #2c3e50;
+        }
+        .card p {
+            color: #7f8c8d;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--accent-color, #3498db);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            background: var(--secondary-color, #2980b9);
+        }
+        .card:nth-child(1) { --accent-color: #8B4513; --secondary-color: #D2691E; }
+        .card:nth-child(2) { --accent-color: #C65D3B; --secondary-color: #D4A574; }
+        .card:nth-child(3) { --accent-color: #E67E22; --secondary-color: #D68910; }
+        .card:nth-child(4) { --accent-color: #B85C38; --secondary-color: #C4A57B; }
+        .card:nth-child(5) { --accent-color: #A67C52; --secondary-color: #D4A574; }
+        .card:nth-child(6) { --accent-color: #2196F3; --secondary-color: #64B5F6; }
+        .card:nth-child(7) { --accent-color: #C9A961; --secondary-color: #D4B76A; }
+        .card:nth-child(8) { --accent-color: #6B5B50; --secondary-color: #8A7766; }
+        .card:nth-child(9) { --accent-color: #7C5E3F; --secondary-color: #96754D; }
+        .card:nth-child(10) { --accent-color: #6D4C41; --secondary-color: #8D6E63; }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #7f8c8d;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            margin-top: 3rem;
+        }
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+        .tech-stack {
+            font-size: 0.875rem;
+            color: #95a5a6;
+        }
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            body {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎨 Artisan & Craftsmanship Landing Pages</h1>
+            <p class="subtitle">10 Unique, Professional, & Stunning Designs</p>
+            <p class="description">Explore our collection of handcrafted landing pages, each featuring unique designs, smooth animations, and full accessibility compliance.</p>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-icon">🪵</div>
+                <h2>Artisan Woodworks</h2>
+                <p>Handcrafted wooden furniture with timeless designs. Features scroll animations and parallax effects.</p>
+                <a href="artisan-woodworks/index.html" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🏺</div>
+                <h2>Pottery & Ceramics</h2>
+                <p>Clay & Fire pottery studio with filterable gallery and interactive class carousel.</p>
+                <a href="pottery-ceramics-studio/index.html" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">⚒️</div>
+                <h2>Metalcraft Forge</h2>
+                <p>Bold industrial design for blacksmithing and metal fabrication with animated sparks.</p>
+                <a href="metalcraft-forge/index.html" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🧵</div>
+                <h2>Textile Weavers</h2>
+                <p>Hand-woven textiles and tapestries with elegant serif typography and woven patterns.</p>
+                <a href="textile-weavers/index.html" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">👜</div>
+                <h2>Leathercraft Masters</h2>
+                <p>Premium leather goods with warm earthy tones and smooth fade-up animations.</p>
+                <a href="leathercraft-masters/index.html" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💎</div>
+                <h2>Glassblowing Atelier</h2>
+                <p>Molten glass art with fluid bubble animations and bright blue gradients.</p>
+                <a href="glassblowing-atelier/index.html" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💍</div>
+                <h2>Jewelry Artisan</h2>
+                <p>Handcrafted jewelry with elegant gold accents and sophisticated dark theme.</p>
+                <a href="jewelry-artisan/index.html" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🗿</div>
+                <h2>Stone Carving Studio</h2>
+                <p>Sculpting timeless beauty in stone with architectural elements and monuments.</p>
+                <a href="stone-carving-studio/index.html" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📖</div>
+                <h2>Paper & Bookbinding</h2>
+                <p>Traditional bookbinding and handmade paper with warm vintage aesthetics.</p>
+                <a href="paper-craft-bookbinding/index.html" class="btn">Visit Site</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🧺</div>
+                <h2>Basket Weaving</h2>
+                <p>Natural fiber basketry with sustainable materials and organic woven patterns.</p>
+                <a href="basket-weaving-collective/index.html" class="btn">Visit Site</a>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>All landing pages feature:</strong></p>
+            <p>✨ Unique designs & animations • 🎯 Full accessibility compliance • 📱 Responsive layouts • ⚡ Performance optimized</p>
+            <p class="tech-stack">Built with Vanilla JavaScript, HTML5 & CSS3</p>
+            <p>&copy; 2025 Artisan & Craftsmanship Landing Pages Collection</p>
+        </footer>
+    </div>
+</body>
+</html>
