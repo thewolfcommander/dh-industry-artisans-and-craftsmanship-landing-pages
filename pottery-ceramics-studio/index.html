@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pottery & Ceramics Studio - Handcrafted pottery, ceramic art, and pottery classes">
+    <title>Pottery & Ceramics Studio | Art in Clay</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-wrapper">
+                <a href="#" class="brand" aria-label="Pottery & Ceramics Studio Home">
+                    <span class="brand-icon">🏺</span>
+                    <div class="brand-text">
+                        <span class="brand-name">Clay & Fire</span>
+                        <span class="brand-tagline">Pottery Studio</span>
+                    </div>
+                </a>
+                <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#creations">Creations</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero-section" role="banner">
+        <div class="hero-circles" aria-hidden="true">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="hero-heading">
+                    <span class="word">Shape</span>
+                    <span class="word">Your</span>
+                    <span class="word">Vision</span>
+                </h1>
+                <p class="hero-description">Where earth, water, and fire meet artistic expression</p>
+                <div class="hero-buttons">
+                    <a href="#classes" class="btn-rounded btn-filled">Join a Class</a>
+                    <a href="#creations" class="btn-rounded btn-outlined">View Gallery</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="spinning-wheel" aria-label="Pottery wheel spinning">
+                    <div class="wheel-base"></div>
+                    <div class="clay-form"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+        <div class="wave-divider top" aria-hidden="true"></div>
+        <div class="content-wrapper">
+            <div class="about-content">
+                <span class="label">Our Story</span>
+                <h2 class="section-heading">Crafting Beauty from Earth</h2>
+                <p class="large-text">For over 20 years, our studio has been a sanctuary where clay transforms into art, and beginners become skilled artisans.</p>
+                <p>We believe in the meditative power of working with clay, the joy of creating something with your hands, and the beauty of functional art that enriches daily life.</p>
+                <div class="features-grid">
+                    <div class="feature-box">
+                        <span class="feature-icon">👨‍🎨</span>
+                        <h3>Expert Instruction</h3>
+                        <p>Learn from master ceramicists</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="feature-icon">🎯</span>
+                        <h3>All Skill Levels</h3>
+                        <p>From beginner to advanced</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="feature-icon">🏆</span>
+                        <h3>Award Winning</h3>
+                        <p>Recognized nationally</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-images">
+                <div class="image-card card-1 float">
+                    <div class="placeholder-img" role="img" aria-label="Potter shaping clay on wheel">🏺</div>
+                </div>
+                <div class="image-card card-2 float-delayed">
+                    <div class="placeholder-img" role="img" aria-label="Finished ceramic bowls">🥣</div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- Creations Gallery -->
+    <section id="creations" class="gallery-section">
+        <div class="content-wrapper">
+            <div class="section-header">
+                <span class="label">Gallery</span>
+                <h2 class="section-heading centered">Our Creations</h2>
+                <p class="section-description">Each piece is uniquely crafted and fired with care</p>
+            </div>
+            <div class="filter-tabs" role="tablist" aria-label="Filter gallery by type">
+                <button class="filter-btn active" role="tab" aria-selected="true" data-filter="all">All</button>
+                <button class="filter-btn" role="tab" aria-selected="false" data-filter="bowls">Bowls</button>
+                <button class="filter-btn" role="tab" aria-selected="false" data-filter="vases">Vases</button>
+                <button class="filter-btn" role="tab" aria-selected="false" data-filter="plates">Plates</button>
+                <button class="filter-btn" role="tab" aria-selected="false" data-filter="sculptures">Sculptures</button>
+            </div>
+            <div class="masonry-grid" role="region" aria-live="polite">
+                <div class="masonry-item" data-category="bowls">
+                    <div class="item-card">
+                        <div class="item-image">
+                            <div class="placeholder-img">🥣</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Rustic Serving Bowl</h3>
+                            <p class="item-technique">Hand-thrown stoneware</p>
+                            <span class="item-price">$85</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="vases">
+                    <div class="item-card">
+                        <div class="item-image tall">
+                            <div class="placeholder-img">🏺</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Midnight Blue Vase</h3>
+                            <p class="item-technique">Glazed porcelain</p>
+                            <span class="item-price">$120</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="plates">
+                    <div class="item-card">
+                        <div class="item-image">
+                            <div class="placeholder-img">🍽️</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Dinner Plate Set</h3>
+                            <p class="item-technique">Sgraffito technique</p>
+                            <span class="item-price">$240</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="sculptures">
+                    <div class="item-card">
+                        <div class="item-image tall">
+                            <div class="placeholder-img">🗿</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Abstract Form</h3>
+                            <p class="item-technique">Raku fired</p>
+                            <span class="item-price">$350</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="bowls">
+                    <div class="item-card">
+                        <div class="item-image">
+                            <div class="placeholder-img">🥣</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Cereal Bowl Trio</h3>
+                            <p class="item-technique">Speckled glaze</p>
+                            <span class="item-price">$95</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="masonry-item" data-category="vases">
+                    <div class="item-card">
+                        <div class="item-image">
+                            <div class="placeholder-img">🏺</div>
+                        </div>
+                        <div class="item-info">
+                            <h3>Minimalist Bud Vase</h3>
+                            <p class="item-technique">White glaze</p>
+                            <span class="item-price">$45</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes -->
+    <section id="classes" class="classes-section">
+        <div class="content-wrapper">
+            <div class="section-header">
+                <span class="label">Education</span>
+                <h2 class="section-heading centered">Pottery Classes</h2>
+                <p class="section-description">Find the perfect class for your skill level and interests</p>
+            </div>
+            <div class="classes-carousel">
+                <div class="carousel-track">
+                    <article class="class-card slide-in">
+                        <div class="class-header">
+                            <span class="class-level beginner">Beginner</span>
+                            <span class="class-duration">6 weeks</span>
+                        </div>
+                        <h3>Introduction to Wheel Throwing</h3>
+                        <p>Learn the fundamentals of centering, pulling, and shaping clay on the potter's wheel.</p>
+                        <ul class="class-includes">
+                            <li>All materials included</li>
+                            <li>6 x 2-hour sessions</li>
+                            <li>Take home your creations</li>
+                            <li>Small class size (max 8)</li>
+                        </ul>
+                        <div class="class-footer">
+                            <span class="class-price">$350</span>
+                            <button class="btn-small btn-filled">Enroll Now</button>
+                        </div>
+                    </article>
+                    <article class="class-card slide-in">
+                        <div class="class-header">
+                            <span class="class-level intermediate">Intermediate</span>
+                            <span class="class-duration">8 weeks</span>
+                        </div>
+                        <h3>Advanced Throwing Techniques</h3>
+                        <p>Master complex forms, lids, handles, and spouts with expert guidance.</p>
+                        <ul class="class-includes">
+                            <li>Prerequisite: Beginner course</li>
+                            <li>8 x 2.5-hour sessions</li>
+                            <li>Glazing techniques</li>
+                            <li>Portfolio development</li>
+                        </ul>
+                        <div class="class-footer">
+                            <span class="class-price">$480</span>
+                            <button class="btn-small btn-filled">Enroll Now</button>
+                        </div>
+                    </article>
+                    <article class="class-card slide-in">
+                        <div class="class-header">
+                            <span class="class-level beginner">Beginner</span>
+                            <span class="class-duration">4 weeks</span>
+                        </div>
+                        <h3>Hand-Building Essentials</h3>
+                        <p>Create beautiful pieces using pinch, coil, and slab techniques.</p>
+                        <ul class="class-includes">
+                            <li>No experience needed</li>
+                            <li>4 x 2-hour sessions</li>
+                            <li>Multiple techniques</li>
+                            <li>Surface decoration</li>
+                        </ul>
+                        <div class="class-footer">
+                            <span class="class-price">$280</span>
+                            <button class="btn-small btn-filled">Enroll Now</button>
+                        </div>
+                    </article>
+                    <article class="class-card slide-in">
+                        <div class="class-header">
+                            <span class="class-level advanced">Advanced</span>
+                            <span class="class-duration">10 weeks</span>
+                        </div>
+                        <h3>Glaze Chemistry Workshop</h3>
+                        <p>Dive deep into glaze formulation, mixing, and application techniques.</p>
+                        <ul class="class-includes">
+                            <li>For experienced potters</li>
+                            <li>10 x 3-hour sessions</li>
+                            <li>Lab access included</li>
+                            <li>Create custom glazes</li>
+                        </ul>
+                        <div class="class-footer">
+                            <span class="class-price">$650</span>
+                            <button class="btn-small btn-filled">Enroll Now</button>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-nav" role="group" aria-label="Class navigation">
+                    <button class="carousel-btn prev" aria-label="Previous class">←</button>
+                    <button class="carousel-btn next" aria-label="Next class">→</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="process-section">
+        <div class="content-wrapper">
+            <div class="section-header">
+                <span class="label">How We Create</span>
+                <h2 class="section-heading centered">From Clay to Masterpiece</h2>
+            </div>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-visual">
+                        <div class="step-circle">
+                            <span class="step-num">1</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Wedging & Preparation</h3>
+                        <p>We carefully prepare the clay, removing air bubbles and achieving perfect consistency.</p>
+                    </div>
+                </div>
+                <div class="connector" aria-hidden="true"></div>
+                <div class="step-item">
+                    <div class="step-visual">
+                        <div class="step-circle">
+                            <span class="step-num">2</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Forming</h3>
+                        <p>Using wheel throwing or hand-building techniques to shape the piece.</p>
+                    </div>
+                </div>
+                <div class="connector" aria-hidden="true"></div>
+                <div class="step-item">
+                    <div class="step-visual">
+                        <div class="step-circle">
+                            <span class="step-num">3</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Drying & Trimming</h3>
+                        <p>The piece dries to leather-hard, then we refine the form and add details.</p>
+                    </div>
+                </div>
+                <div class="connector" aria-hidden="true"></div>
+                <div class="step-item">
+                    <div class="step-visual">
+                        <div class="step-circle">
+                            <span class="step-num">4</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Bisque Firing</h3>
+                        <p>First firing to 1830°F transforms clay into permanent ceramic.</p>
+                    </div>
+                </div>
+                <div class="connector" aria-hidden="true"></div>
+                <div class="step-item">
+                    <div class="step-visual">
+                        <div class="step-circle">
+                            <span class="step-num">5</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Glazing</h3>
+                        <p>Carefully applying glaze colors and textures to enhance beauty.</p>
+                    </div>
+                </div>
+                <div class="connector" aria-hidden="true"></div>
+                <div class="step-item">
+                    <div class="step-visual">
+                        <div class="step-circle">
+                            <span class="step-num">6</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3>Final Firing</h3>
+                        <p>Glaze firing to 2200°F creates the finished, food-safe piece.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="content-wrapper">
+            <div class="section-header">
+                <span class="label">Reviews</span>
+                <h2 class="section-heading centered">Student Stories</h2>
+            </div>
+            <div class="testimonials-grid">
+                <blockquote class="testimonial-item pop-in">
+                    <p>"The beginner's class transformed my stress into creativity. Now I have a relaxing hobby and beautiful bowls for my kitchen!"</p>
+                    <footer>
+                        <cite>
+                            <strong>Amanda Peterson</strong>
+                            <span>Beginner Student</span>
+                        </cite>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial-item pop-in">
+                    <p>"I've been taking classes here for 3 years. The instruction is top-notch and the community is incredibly supportive."</p>
+                    <footer>
+                        <cite>
+                            <strong>David Kumar</strong>
+                            <span>Advanced Student</span>
+                        </cite>
+                    </footer>
+                </blockquote>
+                <blockquote class="testimonial-item pop-in">
+                    <p>"From my first centering attempt to selling my work at local markets - this studio made it all possible."</p>
+                    <footer>
+                        <cite>
+                            <strong>Jessica Lee</strong>
+                            <span>Professional Potter</span>
+                        </cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="content-wrapper">
+            <div class="contact-container">
+                <div class="contact-info-side">
+                    <h2>Visit Our Studio</h2>
+                    <p class="subtitle">Come experience the magic of pottery firsthand</p>
+                    <div class="info-blocks">
+                        <div class="info-block">
+                            <span class="info-icon">📍</span>
+                            <div>
+                                <h4>Location</h4>
+                                <p>425 Artisan Avenue<br>Santa Fe, NM 87501</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <span class="info-icon">🕒</span>
+                            <div>
+                                <h4>Studio Hours</h4>
+                                <p>Tue-Sat: 10AM - 7PM<br>Sun: 12PM - 5PM<br>Closed Mondays</p>
+                            </div>
+                        </div>
+                        <div class="info-block">
+                            <span class="info-icon">📧</span>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>
+                                    <a href="tel:+15055551234">(505) 555-1234</a><br>
+                                    <a href="mailto:hello@clayfirstudio.com">hello@clayfirstudio.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form-side" id="inquiryForm" aria-label="Contact form">
+                    <h3>Get in Touch</h3>
+                    <div class="form-row">
+                        <div class="input-wrapper">
+                            <label for="fullname">Full Name *</label>
+                            <input type="text" id="fullname" name="fullname" required aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-wrapper">
+                            <label for="email-contact">Email *</label>
+                            <input type="email" id="email-contact" name="email" required aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-wrapper">
+                            <label for="phone-contact">Phone</label>
+                            <input type="tel" id="phone-contact" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-wrapper">
+                            <label for="interest">I'm interested in</label>
+                            <select id="interest" name="interest">
+                                <option value="">Select an option</option>
+                                <option value="classes">Taking Classes</option>
+                                <option value="purchasing">Purchasing Pottery</option>
+                                <option value="commission">Custom Commission</option>
+                                <option value="studio">Studio Rental</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-wrapper">
+                            <label for="notes">Message *</label>
+                            <textarea id="notes" name="notes" rows="4" required aria-required="true"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-rounded btn-filled full-width">Send Message</button>
+                    <div class="form-message" role="alert" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="content-wrapper">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">
+                        <span class="brand-icon">🏺</span>
+                        <span class="brand-name">Clay & Fire Studio</span>
+                    </div>
+                    <p>Creating functional art and fostering creativity through pottery.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#creations">Gallery</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul class="social-list">
+                        <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                        <li><a href="#" aria-label="Follow us on Pinterest">Pinterest</a></li>
+                        <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                        <li><a href="#" aria-label="Subscribe on YouTube">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Clay & Fire Pottery Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
